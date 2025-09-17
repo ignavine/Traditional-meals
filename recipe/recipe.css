@@ -1,0 +1,257 @@
+*{
+margin:0;
+padding: 0;
+}
+body{
+margin: 0;
+padding: 0;
+}
+.logo{
+margin-left: 3rem;
+width: 60px;
+height: 60px;
+border-radius: 50%;
+}
+nav{
+width: 100%;
+height: 10dvh;
+display: flex;
+flex-direction: row;
+align-items: center;
+justify-content: space-between;
+background-color:white;
+color:black;
+position: sticky;
+top: 0;  
+border-bottom: 1px solid black; 
+}
+.nav-div1{
+display: flex;
+flex-direction: row;
+align-items: center;
+gap: 3rem;
+list-style: none;
+}
+.a{
+list-style: none;
+color: black;
+text-decoration: none;
+}
+a:hover{
+color:royalblue;
+}
+button{
+width: 70px;
+height: 30px;
+}
+.dropdown{
+display: flex;
+flex-direction: row;
+gap: 2rem;
+margin-right: 3rem;
+}
+.dropdown-1{
+display: block;
+}
+.dropdown-1 a{
+display: block;
+color: black;
+text-decoration: none;
+padding: 10px 15px;
+}
+.dropdown-1 .content-1{
+    display: none;
+position: absolute;
+background-color: hsl(0, 0%, 95%);
+min-width: 100px;
+box-shadow: 2px 2px 5px hsla(0, 0%, 0%, 0.8);
+}
+.dropdown-1:hover .content-1{
+display:block;
+}
+.dropdown-1:hover button{
+background-color: hsl(0, 0%, 70%);
+}
+.dropdown-1 a:hover{
+background-color: hsl(0, 0%, 70%);
+}
+
+.dropdown-2{
+display: block;
+}
+.dropdown-2 a{
+display: block;
+color: black;
+text-decoration: none;
+padding: 10px 15px;
+}
+.dropdown-2 .content-2{
+    display: none;
+position: absolute;
+background-color: hsl(0, 0%, 95%);
+min-width: 100px;
+box-shadow: 2px 2px 5px hsla(0, 0%, 0%, 0.8);
+}
+.dropdown-2:hover .content-2{
+display:block;
+}
+.dropdown-2:hover button{
+background-color: hsl(0, 0%, 70%);
+}
+.dropdown-2 a:hover{
+background-color: hsl(0, 0%, 70%);
+}
+.btn-1{
+background-color:yellow;
+border: none;
+color: black;
+border-radius: 5px;
+margin-bottom: 1rem;
+}
+.btn-2{
+background-color:brown;
+border: none;
+border-radius: 5px;
+margin-bottom: 1rem;
+}
+.image{
+width: 90%;
+height: 40dvh;
+}
+.link{
+color: blue;
+}
+.section-achu{
+margin-bottom: 2rem;
+gap: 2rem;
+box-shadow: 2px 2px 5px hsla(0, 0%, 0%, 0.8);
+}
+.h2 {
+color: blueviolet;
+display: flex;
+flex-direction: row;
+align-items: center;
+justify-content: center;
+}
+h2{
+margin-top: 3rem;
+}
+.section-flex{
+display: flex;
+flex-direction: row;
+justify-content: center;
+margin-bottom: 2rem;
+gap: 6rem;
+}
+.section-fufu{
+margin-top: 2rem;
+gap: 2rem;
+margin-bottom: 2rem;
+box-shadow: 2px 2px 5px hsla(0, 0%, 0%, 0.8);
+
+}
+.section-eru{
+justify-content: space-between;
+margin-top: 2rem;
+margin-bottom: 2rem;
+box-shadow: 2px 2px 5px hsla(0, 0%, 0%, 0.8);
+}
+.images{
+width: 350px;
+height: 350px;
+border-radius: 50%;
+margin-top: 2rem;
+}
+.section-ndole{
+justify-content: space-between;
+margin-top: 2rem;
+margin-bottom: 2rem;
+box-shadow: 2px 2px 5px hsla(0, 0%, 0%, 0.8);
+}
+.section-ekwang{
+margin-top: 2rem;
+margin-bottom: 2rem;
+box-shadow: 2px 2px 5px hsla(0, 0%, 0%, 0.8);
+}
+.section-koki{
+margin-top: 2rem;
+margin-bottom: 2rem;
+box-shadow: 2px 2px 5px hsla(0, 0%, 0%, 0.8);
+}
+.section-beans{
+margin-top: 2rem;
+margin-bottom: 2rem;
+box-shadow: 2px 2px 5px hsla(0, 0%, 0%, 0.8);
+}
+.section-bonga{
+margin-top: 2rem;
+margin-bottom: 2rem;
+box-shadow: 2px 2px 5px hsla(0, 0%, 0%, 0.8);
+}
+.section-kokicorn{
+    margin-top: 2rem;
+margin-bottom: 2rem;
+box-shadow: 2px 2px 5px hsla(0, 0%, 0%, 0.8);
+}
+.section-coco{
+    margin-top: 2rem;
+margin-bottom: 2rem;
+box-shadow: 2px 2px 5px hsla(0, 15%, 59%, 0.8);
+}
+.recipe-div{
+width: 25%;
+height: 60dvh;
+background-color:rgb(124, 124, 253);
+border-radius: 15px;
+margin-bottom: 3rem;
+padding: 2rem;
+
+}
+h3{
+margin-top: 1rem;
+}
+.Preparation{
+width: 35%;
+height: 65dvh;
+background-color:pink;
+border-radius: 20px;
+margin-bottom: 3rem;
+padding: 2rem;
+margin-right: 5rem;
+}
+footer{
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+width: 100%;
+height: 60dvh;
+background-color: black;
+color: white;
+}
+.footer-div1{
+display: flex;
+flex-direction: row;
+justify-content: space-evenly;
+gap: 1rem;
+border-bottom: 1px solid white;
+}
+.headine{
+display: flex;
+flex-direction: row;
+justify-content: space-evenly;
+align-items: center;
+font-weight: bolder;
+margin-bottom: 2rem;
+}
+.ul{
+list-style: none;
+color: white;
+list-style-type: none;
+}
+a{
+color: white;
+list-style: none;
+text-decoration: none;
+}
+
