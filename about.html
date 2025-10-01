@@ -8,7 +8,7 @@
     </head>
     <body>
         <header id="header" class="header"></header>
-           <nav>
+   <nav>
         <div class="logo">
             <img src="/images/logo.svg" alt="Traditional Meals Logo" class="logo">
         </div>
@@ -63,12 +63,12 @@
         </div>
     </nav>
       <section class="universal">
-            <section class="about-section1">
+            <section class="about-section" style="margin-top: 3rem;">
                 <div>
                     <img src="/images/photo.jpg" class="images"
-                        style="width: 230px; height: 230px; margin-top: 0; margin-top: 7rem;">
+                        style="width: 300px; height: 300px;">
                 </div>
-                <div class="about-div1">
+                <div class="about-div">
                     <h1>Our story</h1>
                     <p>
                         I'm called Ignavine and am a front end developer <br>
@@ -82,8 +82,8 @@
                     </p>
                 </div>
             </section>
-            <section class="about-section2">
-                <div class="about-div2">
+            <section class="about-section">
+                <div class="about-div" style="margin-right: 2rem; margin-left: 0;">
                     <h1>Our mission</h1>
                     <p>We celebrate, and share traditional meals from diverse
                         tribes,
@@ -96,15 +96,14 @@
                     </p>
                 </div>
                 <div>
-                    <img src="/images/Achu.jpg" alt class="images"
-                        style="margin-top: 0; margin-bottom: 4rem;">
+                    <img src="/images/Achu.jpg" alt class="images">
                 </div>
             </section>
-            <section class="about-section3">
+            <section class="about-section">
                 <div>
                     <img src="/images/fufu.jpg" alt class="images">
                 </div>
-                <div class="about-div3">
+                <div class="about-div">
                     <h1>Our value</h1>
                     <p>
                         We value cultural preservation of and We believe in the
@@ -116,8 +115,11 @@
                     </p>
                 </div>
             </section>
-            <section class="about-section4">
-                <div class="about-div4">
+            <section class="about-section">
+                <div>
+                    <img src="/images/Eru.jpg" alt class="images"> 
+                </div>
+                <div class="about-div">
                     <h2>Our vision</h2>
                     <p>
                         We appraoch traditional meals with respect and
@@ -127,9 +129,7 @@
                         regardless of skill level and background
                     </p>
                 </div>
-                <div>
-                    <img src="/images/Eru.jpg" alt class="images">
-                </div>
+                
             </section>
         </section>
      <footer>
@@ -185,6 +185,34 @@
         </div>
     </footer>
     
-        <script src="/srcipts/nav.js"></script>
+        <script>
+              // Mobile menu toggle functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            const menuToggle = document.querySelector('.menu-toggle');
+            const navMenu = document.querySelector('.nav-div1');
+            
+            menuToggle.addEventListener('click', function() {
+                navMenu.classList.toggle('active');
+            });
+            
+            // Close menu when clicking outside
+            document.addEventListener('click', function(event) {
+                const isClickInsideNav = navMenu.contains(event.target);
+                const isClickOnToggle = menuToggle.contains(event.target);
+                
+                if (!isClickInsideNav && !isClickOnToggle && navMenu.classList.contains('active')) {
+                    navMenu.classList.remove('active');
+                }
+            });
+            
+            // Close menu when a link is clicked
+            const navLinks = document.querySelectorAll('.nav-div1 a');
+            navLinks.forEach(link => {
+                link.addEventListener('click', () => {
+                    navMenu.classList.remove('active');
+                });
+            });
+        });
+        </script>
     </body>
 </html>
