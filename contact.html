@@ -68,14 +68,15 @@
             <img src="/images/Contact us flat _ Premium Vector.jpeg" alt="Contact Us">
         </div>
         
-        <form>
+        <form action="https://api.web3forms.com/submit" method="POST">
             <div class="topic">Send us a message</div>
+            <input type="hidden" name="access_key" value="c703e270-af56-4530-bdb3-78f5b8ad165a">
             <div class="input-box">
-                <input type="text" required>
+                <input type="text" name="Your_name" required>
                 <label>Enter your name</label>
             </div>
             <div class="input-box">
-                <input id="email" type="email" required>
+                <input id="email" name="email" type="email" required>
                 <label>Enter your email</label>
             </div>
             <div class="message-box">
@@ -163,7 +164,7 @@
             <p>&copy; 2025 Traditional. All rights reserved</p>
         </div>
         </footer>
-    
+<script src="script.js"></script>
     <script>
         // Mobile menu toggle functionality
         document.addEventListener('DOMContentLoaded', function() {
@@ -192,27 +193,44 @@
                 });
             });
             
-            // Form validation
-            const form = document.querySelector('form');
-            const emailInput = document.getElementById('email');
-            const errorMsg = document.getElementById('err');
+            // // Form validation
+            // const form = document.querySelector('form');
+            // const emailInput = document.getElementById('email');
+            // const errorMsg = document.getElementById('err');
             
-            form.addEventListener('submit', function(e) {
-                e.preventDefault();
+            // form.addEventListener('submit', function(e) {
+            //     e.preventDefault();
                 
-                // Simple email validation
-                const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-                if (!emailRegex.test(emailInput.value)) {
-                    errorMsg.textContent = 'Please enter a valid email address';
-                    return;
-                }
+            //     // Simple email validation
+            //     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            //     if (!emailRegex.test(emailInput.value)) {
+            //         errorMsg.textContent = 'Please enter a valid email address';
+            //         return;
+            //     }
                 
-                // If validation passes
-                errorMsg.textContent = '';
-                alert('Message sent successfully!');
-                form.reset();
-            });
+            //     // If validation passes
+            //     errorMsg.textContent = '';
+            //     alert('Message sent successfully!');
+            //     form.reset();
+            // });
         });
-    </script>
+    
+//         // Function to send email using SMTP.js
+
+//         function sendEmail() {
+
+//   Email.send({
+//     Host : "smtp.gmail.com",
+//     Username : "ignavine55@gmail.com",
+//     Password : "password",
+//     To : 'ignavine55@gmail.com',
+//     From : 'document.getElementById("email").value,',
+//     Subject : "New contact form enquiry",
+//     Body : "And this is the body"
+// }).then(
+//   message => alert(message)
+// );
+//     }
+//     </script>
 </body>
 </html>
