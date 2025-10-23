@@ -1,134 +1,32 @@
-
-
-const data = {
-  Mankon: [
-    {
-      Title: "achu",
-      description:
-        "Achu is a traditional dish from Cameroon, typically made with pounded cocoyams and served with a yellow soup made from palm oil, spices, and sometimes meat or fish.",
-      image: "images/Achu.jpg",
-      tribalname: "",
-      ingredients: [
-        "Cocoyams",
-        "Palm oil",
-        "Spices (e.g., kanwa,)",
-        "Meat or fish (optional)",
-        "Salt",
-      ],
-    },
+const data =  [
+  {
+    Title: "ACHU",
+    description:"Various tribes that take achu for a traditional meal include",
+    image: "images/Achu.jpg",
+    tag: "achu",
+    tribes: ["Mankon", "Bafut","Babaki","Mbengwi"],
+    ingredients: [
+      "Cocoyams",
+      "Palm oil",
+      "Spices (e.g., kanwa,)",
+      "Meat or fish (optional)",
+      "Salt",
+    ],
+  },
     {
       Title: "fufu",
-      description:
-        "Fufu is a staple food in  Cameroon. It is made by boiling starchy vegetables then pounding them into a smooth, dough-like consistency. Fufu is typically served with soups or stews.",
+      description:"Various tribes that take fufu for a traditional meal include",
+      tag: "fufu",
       image: "images/fufu.jpg",
-      tribalname: "",
+      tribes: ["Kom", "Bali", "Nso", "Wum"],
       ingredients: ["Cassava, yams, or plantains", "Water", "Salt (optional)"],
     },
-  ],
-  Kom: [
-    {
-      Title: "fufu  and khati khati",
-      description:
-        "Fufu and khati khati is a traditional meal in kom that is made with fresh vegitables,fowl and grind corn",
-      image: "images/fufu.jpg",
-      tribalname: "",
-      ingredients: [
-        "corn flour",
-        "Boild water",
-        "Fresh vegitable",
-        "Fowl",
-        "maggi ans salt",
-      ],
-    },
-    {
-      Title: "achu",
-      descriptio:
-        "Achu is a traditional dish from Cameroon, typically made with pounded cocoyams and served with a yellow soup made from palm oil, spices, and sometimes meat or fish.",
-      image: "images/Achu.jpg",
-      tribalname: "",
-      ingredients: [
-        "Cocoyams",
-        "Palm oil",
-        "Spices (e.g., kanwa,)",
-        "Meat or fish (optional)",
-        "Salt",
-      ],
-    },
-  ],
-  Batibo: [
-    {
-      Title: "Beans & Plantian",
-      description:
-        "It is a traditional meal in batibo made with beans,palm oil, meat,bonga and plantians",
-      image: "images/beans.jpg",
-      ingredients: ["Beans", "Red oil", "Bonga", "Maggi and salt", "Plantians"],
-    },
-    {
-      Title: "Better leave and banana",
-      description:
-        "It is one of the cultural meals of batibo maid with better leave,palm oil and banana",
-      ingredients: [
-        "Better leave",
-        "Red oil",
-        "Dry meat",
-        "Massopo",
-        "Maggi and salt",
-      ],
-    },
-  ],
-  Bassa: [
-    {
-      Title: "Koki and cassava",
-      description:
-        "Koki and cassava is a traditional meal in Bassa which is made with koki beans,red oil,and cassava",
-      image: "images/koki.jpg",
-      ingredients: [
-        "Koki beans",
-        "Red oil",
-        "Coco leaves",
-        "Salt and Maggi",
-        "Cassava",
-      ],
-    },
-    {
-      Title: "Ndole",
-      description:
-        "Ndole and plantian is a traditional meal made with better leaves ,groundnuts,and plantians ",
-      image: "images/Ndole.jpg",
-      ingredients: [
-        "Better leaves",
-        "Groundnuts",
-        "Groundnut oil",
-        "Maggi and salt",
-        "Ginger and gallies",
-        "onion",
-        "Plantians",
-      ],
-    },
-  ],
-  Bali: [
-    {
-      Title: "Fufu",
-      Title: "fufu  and Soup",
-      description:
-        "Fufu and khati khati is a traditional meal in kom that is made with fresh vegitables,fowl and grind corn",
-      image: "images/fufu.jpg",
-      tribalname: "",
-      ingredients: [
-        "corn flour",
-        "Boild water",
-        "Fresh vegitable",
-        "Fowl",
-        "maggi ans salt",
-      ],
-    },
-  ],
-  Bamilike: [
     {
       Title: "Eru",
-      description:
-        "Eru is a traditional meal in Bamilike made with water leaves, eru leaves, red oil and water fufu",
+      description:"Various tribes that take eru for a traditional meal include",
       image: "images/Eru.jpg",
+      tag: "eru",
+      tribes: ["Bakossi","Balond", "Bamike", "Bayang"],
       ingredients: [
         "Water leaves",
         "Eru leaves",
@@ -138,91 +36,12 @@ const data = {
         "Water fufu",
       ],
     },
-    {
-      Title: "Koki ",
-      description:
-        "Koki and cassava is a traditional meal in Bamilike which is made with koki beans,red oil,and cassava",
-      image: "images/koki.jpg",
-      ingredients: [
-        "Koki beans",
-        "Red oil",
-        "Coco leaves",
-        "Salt and Maggi",
-        "Cassava",
-      ],
-    },
-  ],
-  Manfe: [
-    {
-      Title: "Turning cocoyams",
-      description:
-        "Turning cocoyams is a traditional meal in Manfe made with cocoyams, red oil and better leaves",
-      image: "images/turning.jpg",
-      ingredients: [
-        "Cocoyams",
-        "Red oil",
-        "Better leaves",
-        "Salt and maggi",
-        "Dry fish",
-      ],
-    },
-    {
-      Title: "Beans and plantian",
-      description:
-        "It is a traditional meal in batibo made with beans,palm oil, meat,bonga and plantians",
-      image: "images/beans.jpg",
-      ingredients: ["Beans", "Red oil", "Bonga", "Maggi and salt", "Plantians"],
-    },
-  ],
-  Meta: [
-    {
-      Title: "Turning cocoyams",
-      description:
-        "Turning cocoyams is a traditional meal in Manfe made with cocoyams, red oil and better leaves",
-      image: "images/turning.jpg",
-      ingredients: [
-        "Cocoyams",
-        "Red oil",
-        "Better leaves",
-        "Salt and maggi",
-        "Dry fish",
-      ],
-    },
-    {
-      Title: "Eru",
-      description:
-        "Eru is a traditional meal in Bamilike made with water leaves, eru leaves, red oil and water fufu",
-      image: "images/Eru.jpg",
-      ingredients: [
-        "Water leaves",
-        "Eru leaves",
-        "Red oil",
-        "Salt and maggi",
-        "Crefish",
-        "Water fufu",
-      ],
-    },
-  ],
-  Bakoko: [
-    {
-      Title: "Kok",
-      description:
-        "kok is a traditional meal in Bakoko made with eru leaves,groundnuts,sugar and cassava",
-      image: "images/kok.jpg",
-      ingredients: [
-        "Eru leaves",
-        "Groundnuts",
-        "Sugar",
-        "Salt",
-        "Banga",
-        "Cassava",
-      ],
-    },
-    {
+     {
       Title: "Ndole",
-      description:
-        "Ndole and plantian is a traditional meal made with better leaves ,groundnuts,and plantians ",
+      description:"Tribes that take ndole for a traditional meal include",
       image: "images/Ndole.jpg",
+      tag: "ndole",
+      tribes: ["Wimbom","Ewondo","Bakewri","Bassa"],
       ingredients: [
         "Better leaves",
         "Groundnuts",
@@ -235,9 +54,10 @@ const data = {
     },
     {
       Title: "Ekwang",
-      description:
-        "Ekwang is a traditional meal in Bakoko made with grated cocoyams, cocoyam leaves, and palm nut soup",
+      description:"Various tribes that take ekwang for a teaditional meal include",
       image: "images/ekwang.jpg",
+      tag: "ekwang",
+      tribes: ["Bafwang","Balondo","Bakossi"],
       ingredients: [
         "Grated cocoyams",
         "Cocoyam leaves",
@@ -246,97 +66,165 @@ const data = {
         "Salt and maggi",
       ],
     },
-  ],
-  WOM: [
     {
-      Title: "Fufu",
-      Title: "fufu  and Soup",
-      description:
-        "Fufu and khati khati is a traditional meal in kom that is made with fresh vegitables,fowl and grind corn",
-      image: "images/fufu.jpg",
-      tribalname: "",
+      Title: "Koki ",
+      description:"Various tribes that eat koki for a traditional meal include",
+      image: "images/koki.jpg",
+      tag: "koki",
+      tribes: ["Bassa","Bafang","Banen"],
       ingredients: [
-        "corn flour",
-        "Boild water",
-        "Fresh vegitable",
-        "Fowl",
-        "maggi ans salt",
+        "Koki beans",
+        "Red oil",
+        "Coco leaves",
+        "Salt and Maggi",
+        "Cassava",
       ],
     },
     {
-      Title: "Fufu and khati khati",
-      description:
-        "Fufu and khati khati is a traditional meal in kom that is made with fresh vegitables,fowl and grind corn",
-      image: "images/fufu.jpg",
-      tribalname: "",
+      Title: "Kok",
+      description:"Various tribes that take kok for a traditional include",
+      image: "images/kok.jpg",
+      tag: "kok",
+      tribes: ["Pango","Abo","Bakoko"],
+    },
+    {
+      Title: "Turning cocoyams",
+      description:"Various tribes that take coco for a traditional meal include",
+      image: "images/turning.jpg",
+      tag: "coco",
+      tribes: ["Mamfe","Meta","Belo"],
       ingredients: [
-        "corn flour",
-        "Boild water",
-        "Fresh vegitable",
-        "Fowl",
-        "maggi ans salt",
+        "Cocoyams",
+        "Red oil",
+        "Better leaves",
+        "Salt and maggi",
+        "Dry fish",
       ],
     },
-  ],
-};
+    {
+      Title: "Sanga",
+      description:"Various tribes that eat sanga for a traditional meal include",
+      image: "images/sanga.jpg",
+      tag: ["Sanga",],
+      tribes: ["Beti","Bakewri","Fang"],
+      ingredients: ["Fresh corn", "Red oil", "Maggi and salt", "Casava leaves"],
+    },
+    {
+      Title: "bongo",
+      description:
+        "Various tribes that eat bongo for a traditional meal include", 
+      image: "images/bongochobi.jpg",
+      tag: "bongo",
+      tribes: ["Mouakobo","Monoka","Nkongsamba"],
+      ingredients: ["Fish", "groundnut oil", "spices", "Maggi and salt", "Plantians"],
+    },
+     {
+      Title: "kokicorn",
+      description:
+        "Various tribes that eat koki for a traditional meal include", 
+      image: "images/kokicorn.jpg",
+      tag: "kokicorn",
+      tribes: ["Nkongsamba","Melong", "Bangem"],
+      ingredients: ["Fresh corn", "Red oil", , "Maggi and salt",],
+    },
+    {
+      Title: "Beans & Plantian",
+      description:
+        "Various tribes that take beans for a traditional meal include", 
+      image: "images/beans.jpg",
+      tag: ["beans",],
+      tribes: ["Batibo","Manfe","Bakossi"],
+      ingredients: ["Beans", "Red oil", "Bonga", "Maggi and salt", "Plantians"],
+    },
+    
+   
+    
+    
+    
+]
 
 const search = document.getElementById("search");
 const root = document.getElementById("root");
 
-console.log(data)
 
-function renderData(filterText = "") {
+function renderFilteredData(filterText = "") {
   let htmlContent = "";
+  let filteredItems = [];
 
-  Object.keys(data).forEach((tribe) => {
-    const filteredItems = data[tribe].filter(item =>
-        (item.Title?.toLowerCase() || "").includes(filterText.toLowerCase()) ||
-        (item.description?.toLowerCase() || "").includes(filterText.toLowerCase()) ||
-        (item.ingredients || []).some(ing =>
-        (ing?.toLowerCase() || "").includes(filterText.toLowerCase()))
-      )
-  });
+  // Filter all items per search text
+  filteredItems = data.filter(item =>
+    (item.Title?.toLowerCase() || "").includes(filterText.toLowerCase()) ||
+    (item.tribalname?.toLowerCase() || "").includes(filterText.toLowerCase())
+  )
 
   if (filteredItems.length > 0) {
-    const itemsHTML = filteredItems
-      .map(
-        (item) => `
-        <div>
-          <a href="recipe.html#${item.Title.toLowerCase().replace(/\s+/g, '-')}" style="color: black;">
-            <div class="section2-card" id="${item.Title.toLowerCase().replace(/\s+/g, '-')}-section">
-              <div>
-                <img src="${item.image}" alt="${item.Title}" class="food-img">
-              </div>
-              <div class="text">
-                <h4>${item.Title}</h4>
-                <p>${item.description}</p>
-                <ul>
-                  ${item.ingredients.map((ingredient) => `<li>${ingredient}</li>`).join("")}
-                </ul>
-                <button>Learn now</button>
-              </div>
-            </div>
-          </a>
-        </div>
-      `
-      )
-      .join("");
+    filteredItems.forEach(item => {
+      htmlContent += `
+        <a href="recipe.html#${item.tag}" style="color: black;">
+            <div class="section2-card">
+                <div>
+                    <img src="/images/${item.tag}.jpg" alt="${item.tag}"
+                        class="food-img">
+                </div>
+                <div class="text">
+                    <h4>${item.description}</h4><br>
+                    <ul>`;
+      for(let i=0; i< item.tribes.length; i++){
+        htmlContent += `<li>${item.tribes[i]}</li>`
+      }
 
-    htmlContent += `
-      <div>
-        <h3 class="text-center">${tribe}</h3>
-        <div class="cards-container">
-          ${itemsHTML}
-        </div>
-      </div>
-    `;
+      htmlContent += `</ul>
+                    <button>Learn now</button>
+                </div>
+            </div>
+        </a>
+      `;
+
+    })
     }
 
   root.innerHTML = htmlContent;
 }
 
-renderData();
 
+function renderAllData(filterText = "") {
+  let htmlContent = "";
+
+  if (data.length > 0) {
+    data.forEach(item => {
+      htmlContent += `
+        <a href="recipe.html#${item.tag}" class="cart-holder" style="color: black;">
+            <div class="section2-card">
+                <div>
+                    <img src="/images/${item.tag}.jpg" alt="${item.tag}"
+                        class="food-img">
+                </div>
+                <div class="text">
+                    <h4>${item.description}</h4><br>
+                    <ul>`;
+      for(let i=0; i< item.tribes.length; i++){
+        htmlContent += `<li>${item.tribes[i]}</li>`
+      }
+
+      htmlContent += `</ul>
+                    <button>Learn now</button>
+                </div>
+            </div>
+        </a>
+      `;
+
+    })
+    }
+
+  root.innerHTML = htmlContent;
+}
+
+renderAllData();
 search.addEventListener("input", (e) => {
-  renderData(e.target.value);
+  let value = e.target.value;
+  if(value == '' || value == undefined){
+    renderAllData();
+  } else {
+    renderFilteredData(e.target.value);
+  }
 });
