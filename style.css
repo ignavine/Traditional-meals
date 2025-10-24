@@ -168,8 +168,9 @@ body {
   display: flex;
   flex-wrap: wrap;
   gap: 2rem;
-  margin-left: 5rem;
+  margin-left: 3rem;
   margin-bottom: 3rem;
+  margin-right: 3rem;
 }
 
 .section2-card {
@@ -183,6 +184,7 @@ body {
 
 .section2-card:hover {
   transform: scale(1.03);
+  
 }
 
 .section2-card img {
